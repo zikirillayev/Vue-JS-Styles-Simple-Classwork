@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Styles</title>
+</head>
+<style>
+    *{
+        transition: 700ms;
+    }
+    .input{
+       transform: scale(2.5 , 2.5);
+    }
+</style>
+<!-- <h1 style="-webkit-text-stroke: 1px red;"> Uzbekistan</h1> -->
+<body style="background: black; display: flex; justify-content: center;">
+    <div id="app" >
+        <!-- <div > -->
+            <h1 v-bind:style="styles">{{text}}</h1>
+            <!-- <h1 v-bind:style="styles">Fr13nds</h1> -->
+            <!-- <h1 v-bind:style="[box,]"></h1> -->
+            
+            <input class="input" v-model="changes" v-on:change="change" type="checkbox">
+        <!-- </div> -->
+        <!-- <button @click="change" style="width: 200px; height: 60px; background: grey; border-radius: 10px;"><b>Change to red </b></button> -->
+    </div>
+    
+
+    <script src="vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
